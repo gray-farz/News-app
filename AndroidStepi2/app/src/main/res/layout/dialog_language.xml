@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/purple_200"
+    android:gravity="center"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgIR"
+            android:src="@drawable/iran"
+            android:layout_centerVertical="true"
+            android:layout_width="42dp"
+            android:layout_height="32dp"/>
+
+        <RadioButton
+            android:id="@+id/radioIR"
+            android:text="Fa"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/imgIR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgEn"
+            android:src="@drawable/us"
+            android:layout_centerVertical="true"
+            android:layout_width="42dp"
+            android:layout_height="32dp" />
+
+        <RadioButton
+            android:id="@+id/radioEn"
+            android:text="En"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/imgEn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOK"
+        android:text="ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

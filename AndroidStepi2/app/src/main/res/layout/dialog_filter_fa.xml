@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/purple_200"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtCat"
+                android:text="دسته بندی"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"/>
+
+            <RadioGroup
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/radioMobile"
+                    android:text="موبایل"
+                    android:textColor="@color/gray_100"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:layoutDirection="rtl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/radioIntelligence"
+                    android:text="هوش مصنوعی"
+                    android:textColor="@color/gray_100"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:layoutDirection="rtl"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:text="تاریخ"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:gravity="right|center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnFrom"
+                    android:text="از"
+                    android:textSize="14sp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnTo"
+                    style="@style/Widget.App.Button"
+                    android:textSize="14sp"
+                    android:text="تا"
+                    android:layout_margin="4dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnFilter"
+            android:text="فیلتر کن"
+            android:textColor="@color/yellow"
+            android:textSize="14sp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancel"
+            android:text="لغو فیلتر"
+            android:textColor="@color/teal_200"
+            android:textSize="14sp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/btnFilter"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@color/purple_200"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            app:cardCornerRadius="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgItemResponse"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/txtTitleResponse"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgCatResponse"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+
+            <TextView
+                android:id="@+id/txtCatResponse"
+                android:textSize="16sp"
+                android:textColor="@color/gray_100"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:layout_toStartOf="@id/imgCatResponse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtDateResponse"
+                android:textColor="@color/white"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_centerVertical="true"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
