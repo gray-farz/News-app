@@ -80,7 +80,8 @@ public class MainActivity extends AppCompatActivity implements DialogLanguage.On
                     Log.d("aaa", "listener: null");
                     break;
                 case R.id.search:
-                    Intent intent = new Intent(MainActivity.this, SearchActivity.class);
+                    Intent intent = new Intent(MainActivity.this,
+                                    SearchActivity.class);
                     intent.putExtra("ln", language);
                     startActivity(intent);
                     break;

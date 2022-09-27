@@ -68,10 +68,12 @@ public class FilterDialogEn extends DialogFragment {
             catFilter = null;
             radioMobile.setChecked(false);
             radioIntelligence.setChecked(false);
-        } else if (CAT_SELECT == 1) {
+        }
+        else if (CAT_SELECT == 1) {
             catFilter = "cat&name=1";
             radioMobile.setChecked(true);
-        } else {
+        }
+        else {
             catFilter = "cat&name=2";
             radioIntelligence.setChecked(true);
         }
@@ -103,10 +105,13 @@ public class FilterDialogEn extends DialogFragment {
         });
 
         btnFilter.setOnClickListener(view1 -> {
-            if (catFilter != null) {
+            if (catFilter != null)
+            {
                 clickFilterEn.onCatEn(catFilter);
                 dismiss();
-            } else if (isCheckDate) {
+            }
+            else if (isCheckDate)
+            {
                 clickFilterEn.onFilterDateEn(generateDateFilter());
                 dismiss();
             }
@@ -145,9 +150,11 @@ public class FilterDialogEn extends DialogFragment {
         mMonth = calendar.get(Calendar.MONTH);
         mDay = calendar.get(Calendar.DAY_OF_MONTH);
 
-        DatePickerDialog datePickerDialog = new DatePickerDialog(getContext(), new DatePickerDialog.OnDateSetListener() {
+        DatePickerDialog datePickerDialog = new DatePickerDialog(getContext(),
+                new DatePickerDialog.OnDateSetListener() {
             @Override
-            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+            public void onDateSet(DatePicker view,
+                                  int year, int month, int dayOfMonth) {
                 if (request == FROM_REQUEST)
                 {
 

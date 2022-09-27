@@ -18,14 +18,16 @@ public class ApiService {
 
     private RequestQueue requestQueue;
 
-    public ApiService(Context context) {
+    public ApiService(Context context)
+    {
         requestQueue = Volley.newRequestQueue(context);
     }
 
     public void getResponse(int page, String language, String filter,
                             com.android.volley.Response.Listener<List<Response>> listener,
                             com.android.volley.Response.ErrorListener errorListener) {
-        GsonRequest<List<Response>> request = new GsonRequest<List<Response>>(Request.Method.GET,
+        GsonRequest<List<Response>> request = new GsonRequest<List<Response>>
+                (Request.Method.GET,
                 "https://rezaeianengineer.com/finaljava/shownews.php?page=" + page + "&per_page=5"+"&filter="+filter,
                 new TypeToken<List<Response>>() {
                 }.getType(), listener, errorListener);
